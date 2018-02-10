@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 441a2d427b555ad488be48628abcc1b7
-timeCreated: 1518211563
+timeCreated: 1518286963
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -13,22 +13,39 @@ ModelImporter:
     400002: 'Light #2'
     400004: //RootNode
     400006: walrus
-    2100000: wal_body
-    2100002: wal_tusk
-    2100004: wal_eye
-    2100006: wal_vibrissa
     2300000: walrus
     3300000: walrus
     4300000: walrus
+    6400000: walrus
     9500000: //RootNode
     10800000: Light
     10800002: 'Light #2'
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wal_body
+    second: {fileID: 2100000, guid: 90a1408e28fd74e2ca5a43e458b6752d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wal_eye
+    second: {fileID: 2100000, guid: 4195130d7aa7541bd8c88a065a31d5f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wal_tusk
+    second: {fileID: 2100000, guid: 18b8c3f26099747f9ba091850d9d0648, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wal_vibrissa
+    second: {fileID: 2100000, guid: 0663ba64a19564686a5e0102ac7dbc82, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -55,19 +72,17 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

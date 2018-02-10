@@ -30,6 +30,8 @@ public class Autowalk : MonoBehaviour
 {
 	private const int RIGHT_ANGLE = 90;
 
+	private AudioSource walkSound;
+
 	// This variable determinates if the player will move or not 
 	private bool isWalking = false;
 
@@ -59,6 +61,7 @@ public class Autowalk : MonoBehaviour
 	void Start()
 	{
 		mainCamera = Camera.main.transform;
+		walkSound = GetComponent<AudioSource> ();
 	}
 
 	void Update()
@@ -103,11 +106,14 @@ public class Autowalk : MonoBehaviour
 			isWalking = false;
 		}
 
-		if (isWalking)
-		{
-			Vector3 direction = new Vector3(mainCamera.transform.forward.x, 0, mainCamera.transform.forward.z).normalized * speed * Time.deltaTime;
-			Quaternion rotation = Quaternion.Euler(new Vector3(0, -transform.rotation.eulerAngles.y, 0));
-			transform.Translate(rotation * direction);
+		if (isWalking) {
+			Vector3 direction = new Vector3 (mainCamera.transform.forward.x, 0, mainCamera.transform.forward.z).normalized * speed * Time.deltaTime;
+			Quaternion rotation = Quaternion.Euler (new Vector3 (0, -transform.rotation.eulerAngles.y, 0));
+			transform.Translate (rotation * direction);
+
+			walkSound.volume = Random.Range (0.8f, 1);
+			walkSound.pitch = Random.Range (0.8f, 1.1f);
+			walkSound.Play ();
 		}
 
 		if (freezeYPosition)

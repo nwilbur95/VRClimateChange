@@ -110,9 +110,10 @@ public class Autowalk : MonoBehaviour
 			Vector3 direction = new Vector3 (mainCamera.transform.forward.x, 0, mainCamera.transform.forward.z).normalized * speed * Time.deltaTime;
 			Quaternion rotation = Quaternion.Euler (new Vector3 (0, -transform.rotation.eulerAngles.y, 0));
 			transform.Translate (rotation * direction);
+		}
 
-			walkSound.volume = Random.Range (0.8f, 1);
-			walkSound.pitch = Random.Range (0.8f, 1.1f);
+		if (Input.GetButtonDown ("Fire1")) 
+		{
 			walkSound.Play ();
 		}
 

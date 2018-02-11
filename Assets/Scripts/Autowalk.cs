@@ -112,11 +112,6 @@ public class Autowalk : MonoBehaviour
 			transform.Translate (rotation * direction);
 		}
 
-		if (Input.GetButtonDown ("Fire1")) 
-		{
-			walkSound.Play ();
-		}
-
 		if (freezeYPosition)
 		{
 			transform.position = new Vector3(transform.position.x, yOffset, transform.position.z);

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MakeSound : MonoBehaviour {
 
-	public AudioSource cubSound;
+	private AudioSource sound;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start () 
+	{
+		sound = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -16,8 +17,8 @@ public class MakeSound : MonoBehaviour {
 		
 	}
 
-	public void MakeCubSound()
+	public void PlaySound()
 	{
-		cubSound.Play();
+		sound.Play();
 	}
 }

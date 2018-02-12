@@ -9,7 +9,7 @@ public class Trigger2 : MonoBehaviour {
 
 	IEnumerator OnTriggerEnter()
 	{
-		myText.text = "A fully grown walrus will provide nourishment for up to two weeks.";
+		myText.text = "A full grown walrus will provide nourishment for up to two weeks.";
 		yield return new WaitForSeconds (5);
 		myText.text = "";
 	}

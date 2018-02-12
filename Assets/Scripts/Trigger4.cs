@@ -10,7 +10,7 @@ public class Trigger4 : MonoBehaviour {
 
 	IEnumerator OnTriggerEnter()
 	{
-		myText.text = "You are now in range to attack. Click a walrus to hunt it.";
+		myText.text = "Click a walrus to attack it.";
 		yield return new WaitForSeconds (5);
 		myText.text = "";
 		inRange = true;

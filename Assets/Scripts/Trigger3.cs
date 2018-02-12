@@ -9,7 +9,7 @@ public class Trigger3 : MonoBehaviour {
 
 	IEnumerator OnTriggerEnter()
 	{
-		myText.text = "Approach one of the walruses in order to attack it.";
+		myText.text = "Approach one of the walruses to attack it.";
 		yield return new WaitForSeconds (5);
 		myText.text = "";
 	}

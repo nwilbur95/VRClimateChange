@@ -29,7 +29,6 @@ public class Interact : MonoBehaviour {
 
 	public void SealClick()
 	{
-		myText.text = "That's a walrus, but you can't do anything to it yet...";
+		myText.text = "You attacked and killed the walrus. The others have fled.";
 	}
-
 }

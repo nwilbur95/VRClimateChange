@@ -34,6 +34,4 @@ public class ChangeText : MonoBehaviour {
 
 		yield return new WaitForSeconds (3);
 	}
-	
-
 }

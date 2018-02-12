@@ -20,6 +20,10 @@ public class ChangeText : MonoBehaviour {
 		}
 
 		yield return new WaitForSeconds (2);
+		myText.text = " ";
+
+		yield return new WaitForSeconds (3);
+
 		myText.text = "You must find a way to feed your cubs.";
 
 		for (int i = 0; i < 3; i++) 
@@ -27,6 +31,8 @@ public class ChangeText : MonoBehaviour {
 			yield return new WaitForSeconds (1);
 			myText.text += ".";
 		}
+
+		yield return new WaitForSeconds (3);
 	}
 	
 

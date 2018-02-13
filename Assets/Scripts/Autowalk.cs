@@ -30,10 +30,8 @@ public class Autowalk : MonoBehaviour
 {
 	private const int RIGHT_ANGLE = 90;
 
-	private AudioSource walkSound;
-
 	// This variable determinates if the player will move or not 
-	private bool isWalking = false;
+	public bool isWalking = false;
 
 	Transform mainCamera = null;
 
@@ -61,7 +59,6 @@ public class Autowalk : MonoBehaviour
 	void Start()
 	{
 		mainCamera = Camera.main.transform;
-		walkSound = GetComponent<AudioSource> ();
 	}
 
 	void Update()

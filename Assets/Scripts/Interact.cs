@@ -44,14 +44,16 @@ public class Interact : MonoBehaviour {
 		Destroy (walrus3);
 		Destroy (walrus4);
 
-		StartCoroutine (LoadScene (sceneIndex));
+		StartCoroutine (LoadScene ());
 	}
 
-	public IEnumerator LoadScene(int sceneIndex)
+	IEnumerator LoadScene()
 	{
 		yield return new WaitForSeconds (5);
-		myText.text = "Now loading next scene...";
 
-		SceneManager.LoadScene (sceneIndex);
+		myText.text = "Now loading the next scene...";
+
+		yield return new WaitForSeconds (5);
+		SceneManager.LoadScene (1);
 	}
 }

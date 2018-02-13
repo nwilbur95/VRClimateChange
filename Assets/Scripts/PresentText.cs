@@ -25,7 +25,7 @@ public class PresentText : MonoBehaviour {
 		yield return new WaitForSeconds (3);
 
 		//Text sets your text to say this message
-		myText.text = "It is the year 2018";
+		myText.text = "The year is 2018";
 
 		for (int i = 0; i < 3; i++) 
 		{
@@ -48,7 +48,7 @@ public class PresentText : MonoBehaviour {
 
 		yield return new WaitForSeconds (4);
 
-		myText.text = "Your other cub is starving.";
+		myText.text = "Your other cub is starving";
 
 		for (int i = 0; i < 3; i++) 
 		{
@@ -73,7 +73,7 @@ public class PresentText : MonoBehaviour {
 		myText.text = "With less sea ice, polar bears struggle to find food.";
 		yield return new WaitForSeconds (8);
 
-		myText.text = "At this rate, two-thirds of the worlds polar bears will be gone by 2050.";
+		myText.text = "At this rate, two-thirds of the worlds polar bears will be gone by 2050";
 
 		for (int i = 0; i < 3; i++) 
 		{
@@ -83,7 +83,7 @@ public class PresentText : MonoBehaviour {
 
 		yield return new WaitForSeconds (5);
 
-		myText.text = "They will be extinct in less than 100 years.";
+		myText.text = "They will be extinct in less than 100 years";
 
 		for (int i = 0; i < 3; i++) 
 		{
